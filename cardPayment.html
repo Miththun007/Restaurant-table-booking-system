@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT BOOKING WEBSITE</title>
+    <link rel="stylesheet" href="cardPayment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <img src="images\Website-Logo.png" alt="logo">
+        <div class="container">
+            <form action="">
+                <h1 class="heading"><i>CARD INFORMATION </i></h1>
+                
+                <p>CARD TYPE <select name="card_type" id="card_type" autofocus required>
+                        <option value="">--Select A card type--</option>
+                        <option value="visa">Visa</option>
+                        <option value="rupay">Rupay</option>
+                        <option value="mastercard">Mastercard</option>
+                    </select>
+                <p>Card Number<input type="number" name="card_number" id="card_number"
+                        placeholder="Enter your card number" required>
+                </p>
+                <p>Expiration date<input type="date" name="exp_date" id="exp_date" required></p>
+                <p>CVV<input type="password" name="cvv" id="cvv" placeholder="--XXX--" required></p>
+                <br>
+                <div style="text-align: center;"><button class="button" type="submit" onclick="myFunction(); return false" id="Check"
+                    required>Pay Now</button></div>
+                <p id="demo" style="font-style: bold;"></p>
+                <p style="text-align: center;"><a id="homepage" style="color: white;"></a></p>
+                <script>
+                    function myFunction() {
+                        document.getElementById("demo").innerHTML = "Your Payment is Successful";
+                        var a = document.getElementById("homepage");
+
+                        // Create the text node for anchor element.
+                        a.innerHTML = "Go to Homepage";
+
+                        // Set the title.
+                        a.title = "HomePage";
+
+                        // Set the href property.
+                        a.href = "home.html";
+                    }
+                </script>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

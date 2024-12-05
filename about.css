@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;/*margin 15 *20 */
+    font-size: 20px;
+    padding: 8px;
+    height: 100%;
+    /* color: rgb(221, 135, 55); */
+    color:rgb(243, 234, 137);
+    font-weight: bolder;
+    font-family: 'Anton';
+    background-image:url("images/restaurant.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;  
+    background-attachment:scroll;
+    height: 100%;
+    width: 100%;
+
+}
+h1{
+    font-family:'Anton';
+    font-size: 50px;
+}
+.background{
+    
+    background-repeat:no-repeat;
+    background-size:cover;  
+    background-attachment:scroll;
+    height: 100%;
+    width: 100%;
+    
+  }
+.container{
+    /*background-color:rgba(0,0,0,0.8);
+    /* padding: 5px 20px 15px 20px; */
+    background-color:rgba(117, 63, 12, 0.9);
+    padding: 1em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 2px solid black;
+    border-radius: 5px; */
+
+}
+#demo{
+
+    font-size: 25px;
+}
+.pay,input[type="text"],
+input[type="count"],
+input[type="number"],
+input[type="password"],input[type="tel"],input[type="time"],input[type="button"],
+input[type="date"],textarea,button,option,select
+{
+    width: 100%; 
+    /* padding: 12px; */
+    padding: 1em;
+     border: none;
+    /*border-radius: 5px; */
+    background-color: rgba(197, 118, 53, 0.822);
+}
+
+
+.heading
+{
+    text-align: center;
+}
+::placeholder {
+    color: black;
+    opacity: 1; 
+    font-weight: 500;
+  }
+input[type="submit"]
+{
+    /* background-color: rgba(197, 118, 53, 0.822); */
+    background-color: rgba(126, 45, 45, 0.842);
+    color: rgb(238, 231, 150);
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 1em;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .container, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  

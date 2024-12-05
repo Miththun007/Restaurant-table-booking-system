@@ -1,0 +1,107 @@
+body {
+   color: #7E370C;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-image: url("images/restaurant.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+
+}
+
+.display {
+    border-color: #FFCE45;
+    background-color: #FAFAFA ;
+    border-style: solid;
+    border-width: 3.5px;
+    margin-top:5%;
+}
+.box {
+    margin: 3% 0;
+    width:100%;
+
+}
+
+.start {
+    text-align:left;
+    margin: 5% 15%;
+
+}
+h1 {
+   color: #B05E27;
+    font-family:'Anton';
+    font-weight:bold;
+    margin: 10% 0 0 0;
+}
+
+h2 {
+  font-family: 'Cairo', sans-serif;
+  color: #1B1717;
+  font-size: 115%;
+  padding: 10% 0 3% 0;
+
+}
+
+.logo {
+height: 150 px;
+width:150px;
+padding-top:10%;
+ margin: 0;
+
+}
+
+p {
+  padding:10px 0 20px 0;
+  color: #1B1717;
+  font-size: 105%;
+
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+.title-image {
+   margin-top:25%;
+   height:75%;
+   width: 75%;
+
+}
+
+
+.btn{
+background-color: #FFCE45;
+}
+
+.btn:hover{
+background-color: #B05E27;
+}
+
+.card {
+    border-color: #FFCE45;
+    background-color: #FAFAFA ;
+    border-style: solid;
+    border-width: 3.5px;
+    height: 100px;
+    width : 0px;
+
+}
+
+.pref-img{
+  margin-top: 10px;
+  width: 90%;
+}
+
+.form-check-input{
+    height: 20px;
+    width : 20px;
+    margin: 10%;
+
+}
+.cb {
+    margin: 4% 3%;
+}
+#Done {
+margin-top: 5%;
+width:50%;
+}

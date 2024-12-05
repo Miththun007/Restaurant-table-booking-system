@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT BOOKING website</title>
+    <link rel="stylesheet" href="restraunt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            height: 150px;
+        }
+
+        a:link,
+        a:visited {
+            background-color: rgb(243, 234, 137);
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+
+        }
+
+
+
+        a:hover,
+        a:active {
+            background-color: brown;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="background">
+        <img src="images\Website-Logo.png" alt="logo">
+        <div class="container">
+            <form action="">
+                <h1 class="heading">RESTAURANT BOOKING</h1>
+                <p>Count of People:<select name="count" id="count" required><br><br>
+                        <option class="count" value="">--Select your Count--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">more than 10</option>
+                    </select>
+                <p>Date:<input type="date" name="date" id="date" required></p>
+                <label for="time" required>Select a time:</label>&nbsp;
+                <input type="time" id="time" name="time" required><br><br>
+
+                <div style="text-align: center;"><button class="button" onclick="myFunction();return false" id="Check"
+                        required>CHECK AVAILABILITY</button></div>
+                <p id="demo" style="font-style: bold;"></p>
+                <script>
+                    function myFunction() {
+                        document.getElementById("demo").innerHTML = "Woohoo ! There is a table is available for you";
+                    }
+                </script>
+                <p style="font-style: italic;">*To confirm your reservation , advance payment is required</p>
+                <p class="pay" style="color:rgb(238, 231, 150);text-align: center;">Advance amount payable is ₹50 </p>
+                <div style="text-align: center;"><a href="payment.html">CONFIRM BOOKING</a></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
